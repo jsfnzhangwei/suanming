@@ -1,9 +1,9 @@
 name: Build and Push Docker Image
 
 on:
+  workflow_dispatch:
   push:
-    branches: [ "main" ] # 指定触发分支，根据你的实际情况修改，比如可能是 master
-    workflow_dispatch: # 如果需要手动触发，可以取消注释这部分
+    branches: [ main ]
 
 jobs:
   build-and-push:
